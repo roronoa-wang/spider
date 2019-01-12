@@ -1,0 +1,697 @@
+2018-07-14 17:13:21 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: book)
+2018-07-14 17:13:21 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.5 (default, Apr 25 2018, 14:23:58) - [GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.6.0-x86_64-i386-64bit
+2018-07-14 17:13:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'book', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'LOG_FILE': 'logs/book/dangdang/25a0d3fe874611e8819a6c400899d73a.log', 'NEWSPIDER_MODULE': 'book.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['book.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'}
+2018-07-14 17:13:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-07-14 17:13:21 [dangdang] INFO: Reading start URLs from redis key 'dangdang:start_urls' (batch size: 16, encoding: utf-8
+2018-07-14 17:13:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-07-14 17:13:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-07-14 17:13:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline']
+2018-07-14 17:13:21 [scrapy.core.engine] INFO: Spider opened
+2018-07-14 17:13:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-07-14 17:13:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-07-14 17:14:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-07-14 17:14:21 [dangdang] DEBUG: Read 1 requests from 'dangdang:start_urls'
+2018-07-14 17:14:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/> (referer: None)
+2018-07-14 17:14:22 [scrapy_redis.dupefilter] DEBUG: Filtered duplicate request <GET http://book.dangdang.com/children/01.41.26.htm> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-07-14 17:14:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baby.dangdang.com/20170824_eayd> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=FL&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=GJ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baby.dangdang.com/4-23_gjdj> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://store.dangdang.com/gys_04040_fyp3> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=GL&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baby.dangdang.com/20170721_pby5> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170416_1pvw> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baby.dangdang.com/11-11_101hb> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170416_ugug> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=JJ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170524_onr4> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170405_4hqo> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=KS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=SB&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://baby.dangdang.com/20170920_k31d> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20171025_5l35> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=SY&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170405_o3he> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20171121_2pnj> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170413_kbin> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=YS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '四川数字出版传媒有限公司',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 同病相爱(电子书)',
+ 'book_price': '¥2.64',
+ 'book_published_date': ' /2017-12-01',
+ 'book_url': 'http://product.dangdang.com/1900765521.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 我爷爷的抗日(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719758.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': None,
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 安之若宿(电子书)',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-05',
+ 'book_url': 'http://product.dangdang.com/1900719789.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '浙江文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 作家榜经典文库(套装共16册)本本经典(电子书)横扫各大畅销书排行榜的16本著名作家经典书',
+ 'book_price': '¥2.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900729298.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '时代文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 四世同堂(电子书)一段从未远去的民族历史，值得每一代中国人阅读的文学经典。',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900752795.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '时代文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 四世同堂(电子书)一段从未远去的民族历史，值得每一代中国人阅读的文学经典。',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900752795.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '时代文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 四世同堂(电子书)一段从未远去的民族历史，值得每一代中国人阅读的文学经典。',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900752795.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html>
+{'b_category_name': '电子书网络文学阅读器',
+ 'book_author': '时代文艺出版社',
+ 'book_img_url': 'images/model/guan/url_none.png',
+ 'book_name': ' 四世同堂(电子书)一段从未远去的民族历史，值得每一代中国人阅读的文学经典。',
+ 'book_price': '¥4.99',
+ 'book_published_date': ' /2017-09-01',
+ 'book_url': 'http://product.dangdang.com/1900752795.html',
+ 's_category_name': '特价书',
+ 's_category_url': 'http://category.dangdang.com/cp98.01.03.00.00.00-srsort_pubdate_desc-lp-hp5-sc4-ld0-hd3.html'}
+2018-07-14 17:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=ZJ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20171024_5t4l> (referer: http://book.dangdang.com/)
+2018-07-14 17:14:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=LS1&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=WY2&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=ZXZJ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.dangdang.com/20170405_dqww> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=JJS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=XLX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=CYCS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=GTTS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:21 [scrapy.extensions.logstats] INFO: Crawled 34 pages (at 34 pages/min), scraped 60 items (at 60 items/min)
+2018-07-14 17:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=GZYQ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=JSWX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=KPDW&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=LXGX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=SHKX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=TZLC&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=WGXS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=WXXS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=WXXX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=XDDS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=XDYQ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:01 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2018-07-14 17:16:01 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-07-14 17:16:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=XHQH&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=ZRKX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=SGDIY&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=AQQG&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=BYJS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=CGLZ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:21 [scrapy.extensions.logstats] INFO: Crawled 51 pages (at 17 pages/min), scraped 60 items (at 0 items/min)
+2018-07-14 17:16:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=JSKB&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=JTJJ&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=LYDT&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=PRMS&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=QZJY&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://e.dangdang.com/classification_list_page.html?category=SSMX&dimension=dd_sale&order=0> (referer: http://book.dangdang.com/)
+2018-07-14 17:16:42 [scrapy.crawler] INFO: Received SIGTERM twice, forcing unclean shutdown
